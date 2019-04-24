@@ -56,8 +56,8 @@ def get_backwards_player_stats(player_name, start_day, start_month, start_year, 
             games.append(game)
     return games
 
-(player_list, game_player_list) = gen_player_lookup(1946, 2018)
-for game in get_games_list():
-    
+# (player_list, game_player_list) = gen_player_lookup(1946, 2018)
+for game in get_games_list(2010, 2019):
+    print(game)
 
-print(get_backwards_player_stats('antetgi01', 31, 12, 2017, 2016, 100, game_player_list))
+# print(get_backwards_player_stats('antetgi01', 31, 12, 2017, 2016, 100, game_player_list))

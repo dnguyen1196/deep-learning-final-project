@@ -86,7 +86,6 @@ model.add(Dense(nb_class))
 model.add(Activation('softmax'))
 
 
-
 sgd = SGD(lr=0.01, nesterov=True, decay=1e-6, momentum=0.9)
 
 # TODO: modify the loss function to binary classification (if we are predicting WIN-LOSS) 
