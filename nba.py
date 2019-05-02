@@ -105,7 +105,6 @@ model.add(Dense(2048, activation='relu'))
 model.add(Dense(1024, activation='relu'))
 model.add(Dense(2))
 
-
 sgd = SGD(lr=0.01, nesterov=True, decay=1e-6, momentum=0.9)
 model.compile(loss='mean_squared_error', optimizer=sgd, metrics=["mae"])
 model.fit(x = X_batch, y = Y_batch, batch_size=10)
